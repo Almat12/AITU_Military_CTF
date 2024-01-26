@@ -1,0 +1,64 @@
+<template>
+  <div class="relative flex flex-col h-screen m-0">
+ 
+    <img src="./assets/bg.gif" alt="Background" class="absolute z-0 w-full h-full object-cover" />
+    <div class="flex flex-1 items-end justify-center mt-16 pb-12 z-10">
+      <!-- Countdown timer -->
+      <div class="absolute bottom-0 mb-12 w-full flex flex-col items-center justify-center z-20">
+      <div class="flex flex-wrap justify-center space-x-4 mb-4">
+        <div class="flex flex-col items-center justify-center m-2">
+          <p class="text-5xl text-white font-semibold">{{ days >= 0 ? days : 0 }}</p>
+          <h1 class="text-xl md:text-3xl text-white">Days</h1>
+        </div>
+        <div class="flex flex-col items-center justify-center m-2">
+          <p class="text-5xl text-white font-semibold">{{ hours >= 0 ? hours % 24 : 0 }}</p>
+          <h1 class="text-xl md:text-3xl text-white">Hours</h1>
+        </div>
+        <div class="flex flex-col items-center justify-center m-2">
+          <p class="text-5xl text-white font-semibold">{{ minutes >= 0 ? minutes % 60 : 0 }}</p>
+          <h1 class="text-xl md:text-3xl text-white">Minutes</h1>
+        </div>
+        <div class="flex flex-col items-center justify-center m-2">
+          <p class="text-5xl text-white font-semibold">{{ seconds >= 0 ? seconds % 60 : 0 }}</p>
+          <h1 class="text-xl md:text-3xl text-white">Seconds</h1>
+        </div>
+      </div>
+      
+      <!-- Start Shopping Button -->
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 rounded" >
+        <a href="https://forms.office.com/r/hcX0PDgALY" target="_blank">
+        Регистрация
+      </a>
+      </button>
+    </div>
+    </div>
+  </div>
+</template>
+
+
+
+  
+  
+  <script>
+  import { ref } from 'vue';
+  
+  export default {
+    setup() {
+      const days = ref(0);
+      const hours = ref(0);
+      const minutes = ref(0);
+      const seconds = ref(0);
+      const LaunchDate = new Date('February, 14 2024, 23:59'); // Указывайте месяц перед днем для избежания путаницы
+      setInterval(() => {
+        const currDate = new Date();
+        const launchTime = LaunchDate - currDate;
+        seconds.value = Math.max(parseInt(launchTime / 1000), 0);
+        minutes.value = Math.max(parseInt(seconds.value / 60), 0);
+        hours.value = Math.max(parseInt(minutes.value / 60), 0);
+        days.value = Math.max(parseInt(hours.value / 24), 0);
+      }, 1000);
+      return { days, hours, minutes, seconds };
+    }
+  }
+  </script>
+  
