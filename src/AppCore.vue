@@ -10,10 +10,10 @@
     <!-- OSINT Column -->
     <div class="bg-gray-200 p-4 flex flex-col justify-between">
       <div class="flex items-center justify-center space-x-2">
-        <span class="text-md text-gray-700 hover:text-gray-800">OSINT</span>
-        <a href="/OSINT.pdf" target="_blank">
+        <a href="/OSINT.pdf" target="_blank"> 
+        <span class="text-md text-gray-700 hover:text-blue-500 hover:underline">OSINT</span>
+         </a>
           <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4">
-        </a>
       </div>
       <p class="text-md text-gray-500 mt-2">Сбор и анализ данных из общедоступных источников для выявления информации, которая поможет решить задачу.</p>
     </div>
@@ -21,10 +21,11 @@
     <!-- Web Exploitation Column -->
     <div class="bg-gray-200 p-4 flex flex-col justify-between">
       <div class="flex items-center justify-center space-x-2">
-        <span class="text-md text-gray-700 hover:text-gray-800">Web эксплуатация</span>
         <a href="/web.pdf" target="_blank">
+        <span class="text-md text-gray-700 hover:text-blue-500 hover:underline">Web эксплуатация</span>
+       </a>
           <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4">
-        </a>
+      
       </div>
       <p class="text-md text-gray-500 mb-5">Использование уязвимостей в веб-приложениях для проникновения в систему.</p>
     </div>
@@ -32,7 +33,7 @@
     <!-- Reverse Engineering Column -->
     <div class="bg-gray-200 p-4 flex flex-col justify-between">
       <div class="flex items-center justify-center space-x-2">
-        <span class="text-md text-gray-700 hover:text-gray-800">Reverse Engineering</span>
+        <span class="text-md text-gray-700 hover:text-blue-500 hover:underline">Reverse Engineering</span>
         <a href="/reverse.pdf" target="_blank">
           <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4">
         </a>
