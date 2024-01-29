@@ -1,68 +1,48 @@
 <template>
   <div class="bg-gray-100 p-4">
     <!-- Header section -->
-    <header id="key-events" class=" text-black p-4">
-      <h1 class="text-4xl font-bold">Ключевые события</h1>
-    </header>
-
-    <!-- Workshop section -->
-    <section class="mt-4 p-4 bg-white flex flex-col items-center lg:flex-row lg:justify-around lg:space-x-10">
-    <!-- Qualifying Round Section -->
-    <div class="flex flex-col items-center lg:items-start">
-      <img src="./assets/checkin.png" alt="" class="h-auto w-60 rounded-lg">
-      <h2 class="text-lg font-bold mt-2 ml-7">Сбор участников</h2>
-      <p>17 Февраля 2024, 10:00–10:50</p>
-</div>
-    <!-- Capture The Flag Challenge section -->
-    <div class="flex flex-col items-center lg:items-start mt-4  lg:mt-0">
-      <img src="./assets/mainpart.png" alt="Основной этап CTF" class="h-auto w-60 rounded-lg">
-      <h2 class="text-xl font-bold mt-2 ml-4">Основной этап CTF</h2>
-      <p class="ml-3">17 февраля 2024, 11:00-16:00</p>
-    </div>
-    <!-- Webinar and Award Presentation section -->
-    <div class="flex flex-col items-center lg:items-start mt-4  lg:mt-0">
-      <img src="./assets/awards.png" alt="Основной этап CTF" class="h-auto w-60 rounded-lg">
-      <h2 class="text-xl font-bold mt-2 ml-4">Награждение CTF</h2>
-      <p class="ml-3">17 февраля 2024, 17:00</p>
-    </div>
-    </section>
     <header id="key-events" class="text-black p-4">
-  <h1 class="text-4xl font-bold">Примеры задач CTF</h1>
+  <h1 class="text-4xl font-bold text-center">Примеры задач CTF</h1>
 </header>
 
 <section class="mt-4 p-4 bg-white">
-  <div class="grid grid-cols-3 gap-4">
-    <!-- Column 1 -->
-    <div class="bg-gray-200 p-4 text-center">
-      <h3 class="text-lg text-gray-700 hover:text-gray-800 cursor-pointer">
-        <a href="/OSINT.pdf" target="_blank" class="flex items-center text-lg ml-40 text-gray-700 underline hover:text-blue-500">
-OSINT  <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4 ml-2">
-</a>       
-<p class="text-md text-gray-500">Сбор и анализ данных из общедоступных источников для выявления информации которая поможет решить задачу.</p>
- </h3>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <!-- OSINT Column -->
+    <div class="bg-gray-200 p-4 flex flex-col justify-between">
+      <div class="flex items-center justify-center space-x-2">
+        <span class="text-md text-gray-700 hover:text-gray-800">OSINT</span>
+        <a href="/OSINT.pdf" target="_blank">
+          <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4">
+        </a>
+      </div>
+      <p class="text-md text-gray-500 mt-2">Сбор и анализ данных из общедоступных источников для выявления информации, которая поможет решить задачу.</p>
     </div>
 
-    <!-- Column 2 -->
-    <div class="bg-gray-200 p-4 text-center">
-      <h4 class="text-lg text-gray-700 hover:text-gray-800 cursor-pointer">
-        <a href="/web.pdf" target="_blank" class="flex items-center text-lg ml-32 text-gray-700 underline hover:text-blue-500">
-  Web эксплуатация
-  <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4 ml-2">
-</a>
-<p class="text-md text-gray-500">Использование уязвимостей в веб-приложениях для для проникновения в систему.</p>
-      </h4>
+    <!-- Web Exploitation Column -->
+    <div class="bg-gray-200 p-4 flex flex-col justify-between">
+      <div class="flex items-center justify-center space-x-2">
+        <span class="text-md text-gray-700 hover:text-gray-800">Web эксплуатация</span>
+        <a href="/web.pdf" target="_blank">
+          <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4">
+        </a>
+      </div>
+      <p class="text-md text-gray-500 mb-5">Использование уязвимостей в веб-приложениях для проникновения в систему.</p>
     </div>
 
-    <!-- Column 3 -->
-    <div class="bg-gray-200 p-4 text-center">
-      <h5 class="text-lg text-gray-700 hover:text-gray-800 cursor-pointer">
-        <a href="/reverse.pdf" target="_blank" class="flex items-center text-lg ml-32 text-gray-700 underline hover:text-blue-500">
-Reverse Engineering  <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4 ml-2"></a>
-<p class="text-md text-gray-500"> Анализ закрытых программных решений с целью понимания их работы и выявления уязвимостей.</p>
-</h5>
+    <!-- Reverse Engineering Column -->
+    <div class="bg-gray-200 p-4 flex flex-col justify-between">
+      <div class="flex items-center justify-center space-x-2">
+        <span class="text-md text-gray-700 hover:text-gray-800">Reverse Engineering</span>
+        <a href="/reverse.pdf" target="_blank">
+          <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4">
+        </a>
+      </div>
+      <p class="text-md text-gray-500 mb-5">Анализ закрытых программных решений с целью понимания их работы и выявления уязвимостей.</p>
     </div>
   </div>
 </section>
+
+
 
 
 
