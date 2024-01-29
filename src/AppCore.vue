@@ -26,31 +26,46 @@
       <p class="ml-3">17 февраля 2024, 17:00</p>
     </div>
     </section>
-    <header id="key-events" class=" text-black p-4">
-      <h1 class="text-4xl font-bold">Примеры задач CTF</h1>
-    </header>
-    <section class="mt-4 p-4  bg-white">
-    <div class="flex flex-wrap md:flex-nowrap items-center justify-center md:justify-start">
-      <!-- Text container on the left -->
-      <div class="flex flex-col md:mb-0 md:mr-8 ">
-        <p class="text-xl mb-6 font-bold">3 типа задач:</p>
-        <h3 class="text-lg text-gray-700 hover:text-gray-800 cursor-pointer mb-2">
-          <a href="/OSINT.pdf" target="_blank" class="text-gray-900 underline hover:text-blue-500 decoration-blue-500">OSINT</a>
-        </h3>
-        <h4 class="text-lg text-gray-700 hover:text-gray-800 cursor-pointer mb-2">
-          <a href="/web.pdf" target="_blank" class="text-gray-900 underline hover:text-blue-500 decoration-blue-500">Web эксплуатация</a>
-        </h4>
-        <h5 class="text-lg text-gray-700 hover:text-gray-800  cursor-pointer mb-5">
-          <a href="/reverse.pdf" target="_blank" class="text-gray-900 underline hover:text-blue-500 decoration-blue-500">Reverse Engineering</a>
-        </h5>
-      </div>
+    <header id="key-events" class="text-black p-4">
+  <h1 class="text-4xl font-bold">Примеры задач CTF</h1>
+</header>
 
-      <!-- Image container on the right -->
-      <div class="md:flex-1 justify-end flex mr-4">
-        <img src="./assets/ctftasks.jpg" alt="CTF Tasks" class="rounded-lg shadow-md w-80 h-80">
-      </div>
+<section class="mt-4 p-4 bg-white">
+  <div class="grid grid-cols-3 gap-4">
+    <!-- Column 1 -->
+    <div class="bg-gray-200 p-4 text-center">
+      <h3 class="text-lg text-gray-700 hover:text-gray-800 cursor-pointer">
+        <a href="/OSINT.pdf" target="_blank" class="flex items-center text-lg ml-40 text-gray-700 underline hover:text-blue-500">
+OSINT  <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4 ml-2">
+</a>       
+<p class="text-md text-gray-500">Сбор и анализ данных из общедоступных источников для выявления информации которая поможет решить задачу.</p>
+ </h3>
     </div>
-    </section>
+
+    <!-- Column 2 -->
+    <div class="bg-gray-200 p-4 text-center">
+      <h4 class="text-lg text-gray-700 hover:text-gray-800 cursor-pointer">
+        <a href="/web.pdf" target="_blank" class="flex items-center text-lg ml-32 text-gray-700 underline hover:text-blue-500">
+  Web эксплуатация
+  <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4 ml-2">
+</a>
+<p class="text-md text-gray-500">Использование уязвимостей в веб-приложениях для для проникновения в систему.</p>
+      </h4>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="bg-gray-200 p-4 text-center">
+      <h5 class="text-lg text-gray-700 hover:text-gray-800 cursor-pointer">
+        <a href="/reverse.pdf" target="_blank" class="flex items-center text-lg ml-32 text-gray-700 underline hover:text-blue-500">
+Reverse Engineering  <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4 ml-2"></a>
+<p class="text-md text-gray-500"> Анализ закрытых программных решений с целью понимания их работы и выявления уязвимостей.</p>
+</h5>
+    </div>
+  </div>
+</section>
+
+
+
       <!-- Organization -->
       <header id="key-events" class=" text-black p-4">
       <h1 class="text-4xl font-bold justify-center items-center flex ">Организаторы</h1>
