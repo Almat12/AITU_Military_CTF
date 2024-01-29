@@ -9,14 +9,3 @@ const app = createApp(App);
 app.use(router);
 app.component('navbar', Navbar)
 app.mount('#app');
-require('spark-bootstrap');
-
-require('./components/bootstrap');
-
-var appVue = new Vue({
-    mixins: [require('spark')]
-});
-
-Vue.config.devtools = false
-Vue.config.debug = false
-Vue.config.silent = true
