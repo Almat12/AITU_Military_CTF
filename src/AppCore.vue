@@ -19,10 +19,11 @@
     <p class="ml-3">17 февраля 2024, 12:30-17:30</p>
   </div>
   <!-- Webinar and Award Presentation section -->
-    <div class="mr-80">
-    <img src="./assets/awards.png" alt="" class="h-auto w-60  rounded-lg">
+  
+     <div class="flex flex-col items-center lg:items-start mt-4  lg:mt-0">
+    <img src="./assets/mainpart.png" alt="Основной этап CTF" class="h-auto w-60 rounded-lg">
     <h2 class="text-lg font-bold ">Церемония награждения</h2>
-    <p class="ml-7">17 Февраля 2024, 17:30</p>
+   <p class="ml-7">17 Февраля 2024, 17:30</p>
   </div>
   </section>
     <header id="key-events" class="text-black p-4">
