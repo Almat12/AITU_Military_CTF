@@ -48,7 +48,7 @@
       const hours = ref(0);
       const minutes = ref(0);
       const seconds = ref(0);
-      const LaunchDate = new Date('February, 24 2024, 23:59'); // Указывайте месяц перед днем для избежания путаницы
+      const LaunchDate = new Date('February, 22 2024, 23:59'); // Указывайте месяц перед днем для избежания путаницы
       setInterval(() => {
         const currDate = new Date();
         const launchTime = LaunchDate - currDate;
