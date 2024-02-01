@@ -21,7 +21,7 @@
   <!-- Webinar and Award Presentation section -->
   
      <div class="flex flex-col items-center lg:items-start mt-4  lg:mt-0">
-    <img src="./assets/mainpart.png" alt="Основной этап CTF" class="h-auto w-60 rounded-lg">
+    <img src="./assets/awards.png" alt="Основной этап CTF" class="h-auto w-60 rounded-lg">
     <h2 class="text-lg font-bold ">Церемония награждения</h2>
    <p class="ml-7">17 Февраля 2024, 17:30</p>
   </div>
