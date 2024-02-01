@@ -33,37 +33,37 @@
 <section class="mt-4 p-4 bg-white">
   <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
     <!-- OSINT Column -->
-    <div class="bg-gray-200 p-4 flex flex-col justify-between">
+    <div class="bg-gradient-to-r from-gray-400 via-gray-300 to-gray-200 p-4 flex flex-col justify-between">
       <div class="flex items-center justify-center space-x-2">
         <a href="/OSINT.pdf" target="_blank"> 
-        <span class="text-md text-gray-700 hover:text-blue-500 hover:underline">OSINT</span>
+        <span class="text-md text-black hover:text-blue-500 hover:underline">OSINT</span>
          </a>
           <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4">
       </div>
-      <p class="text-md text-gray-500 mt-2">Сбор и анализ данных из общедоступных источников для выявления информации, которая поможет решить задачу.</p>
+      <p class="text-md text-black mt-2">Сбор и анализ данных из общедоступных источников для выявления информации, которая поможет решить задачу.</p>
     </div>
 
     <!-- Web Exploitation Column -->
-    <div class="bg-gray-200 p-4 flex flex-col justify-between">
+    <div class="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 p-4 flex flex-col justify-between">
       <div class="flex items-center justify-center space-x-2">
         <a href="/web.pdf" target="_blank">
-        <span class="text-md text-gray-700 hover:text-blue-500 hover:underline">Web эксплуатация</span>
+        <span class="text-md text-black hover:text-blue-500 hover:underline">Web эксплуатация</span>
        </a>
           <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4">
       
       </div>
-      <p class="text-md text-gray-500 mb-5">Использование уязвимостей в веб-приложениях для проникновения в систему.</p>
+      <p class="text-md text-black mb-5">Использование уязвимостей в веб-приложениях для проникновения в систему.</p>
     </div>
 
     <!-- Reverse Engineering Column -->
-    <div class="bg-gray-200 p-4 flex flex-col justify-between">
+    <div class="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 p-4 flex flex-col justify-between">
       <div class="flex items-center justify-center space-x-2">
-        <span class="text-md text-gray-700 hover:text-blue-500 hover:underline">Reverse Engineering</span>
+        <span class="text-md text-black hover:text-blue-500 hover:underline">Reverse Engineering</span>
         <a href="/reverse.pdf" target="_blank">
           <img src="./assets/pdf-icon.png" alt="PDF" class="w-4 h-4">
         </a>
       </div>
-      <p class="text-md text-gray-500 mb-5">Анализ закрытых программных решений с целью понимания их работы и выявления уязвимостей.</p>
+      <p class="text-md text-black mb-5">Анализ закрытых программных решений с целью понимания их работы и выявления уязвимостей.</p>
     </div>
   </div>
 </section>
