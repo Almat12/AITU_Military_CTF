@@ -1,6 +1,6 @@
 # Vue 3 + Vite with TailwindCSS 
 
-The website has been meticulously crafted for the Capture The Flag (CTF) event hosted by Astana IT University. This bespoke digital visit card is fully operational, utilizing Vue.js and TailwindCSS for its development. It is currently hosted on the university's dedicated hosting service, ensuring seamless access and functionality.
+The website has been meticulously crafted for the Capture The Flag (CTF) event hosted for Astana IT University. This bespoke digital visit card is fully operational, utilizing Vue.js and TailwindCSS for its development. It is currently hosted on the university's dedicated hosting service, ensuring seamless access and functionality.
 
 ## Recommended IDE Setup
 
