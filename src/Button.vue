@@ -1,6 +1,6 @@
 <template>
     <button class="bg-white hover:bg-sky-500 border-black duration-300 font-sm rounded-xl">
-        <a href="https://t.me/+2X57sv7xmWJhMjky">
+        <a href="https://t.me/+eqMCR0QQamQ2YWQy">
         <svg
   class="h-7 w-7 align-center"
   fill="sky"
