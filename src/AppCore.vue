@@ -10,7 +10,7 @@
   <div class="flex flex-col items-center lg:items-start">
     <img src="./assets/checkin.png" alt="" class="h-auto w-60 rounded-lg">
     <h2 class="text-lg font-bold mt-2 ml-4">Сбор участников</h2>
-    <p class="ml-3">24 Февраля 2024, 10:00 – 10:45</p>
+    <p>24 Февраля 2024, 10:00 – 10:45</p>
 </div>
   <!-- Capture The Flag Challenge section -->
   <div class="flex flex-col items-center lg:items-start mt-4  lg:mt-0">
