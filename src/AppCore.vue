@@ -9,21 +9,21 @@
   <!-- Qualifying Round Section -->
   <div class="flex flex-col items-center lg:items-start">
     <img src="./assets/checkin.png" alt="" class="h-auto w-60 rounded-lg">
-    <h2 class="text-lg font-bold mt-2 ml-7">Сбор участников</h2>
-    <p>24 Февраля 2024, 2:30PM – 5:00PM</p>
+    <h2 class="text-lg font-bold mt-2 ml-7">Check In</h2>
+    <p>24 Февраля 2024, 10:00 – 10:45</p>
 </div>
   <!-- Capture The Flag Challenge section -->
   <div class="flex flex-col items-center lg:items-start mt-4  lg:mt-0">
     <img src="./assets/mainpart.png" alt="Основной этап CTF" class="h-auto w-60 rounded-lg">
-    <h2 class="text-xl font-bold mt-2 ml-4">Основной этап CTF</h2>
-    <p class="ml-3">24 февраля 2024, 12:30-17:30</p>
+    <h2 class="text-xl font-bold mt-2 ml-4">Capture The Flag (CTF)</h2>
+    <p class="ml-3">24 февраля 2024, 11:00 - 16:00</p>
   </div>
   <!-- Webinar and Award Presentation section -->
   
      <div class="flex flex-col items-center lg:items-start mt-4  lg:mt-0">
     <img src="./assets/awards.png" alt="Основной этап CTF" class="h-auto w-60 rounded-lg">
     <h2 class="text-lg font-bold ">Церемония награждения</h2>
-   <p class="ml-7">24 Февраля 2024, 17:30</p>
+   <p class="ml-7">24 Февраля 2024, 17:00</p>
   </div>
   </section>
     <header id="key-events" class="text-black p-4">
