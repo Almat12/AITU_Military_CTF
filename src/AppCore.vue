@@ -79,10 +79,10 @@
     <section class="mt-4 p-4 bg-white">
       <div class="flex flex-wrap justify-center items-center mt-8 md:justify-center">
         <!-- The first image will be centered on medium devices and up, and left-aligned on smaller screens -->
-        <img src="./assets/ctfkaf.png" alt="" class="h-auto w-44 mb-10 block md:hidden mx-auto">
-        <img src="./assets/logo.png" alt="" class="h-auto w-44 mb-9 rounded-lg">
-        <img src="./assets/ctfkaf.png" alt="" class="h-auto w-44 mb-12 ml-10 mr-10 hidden md:block">
+        <img src="./assets/ctfkaf.png" alt="" class="h-auto w-48 mb-10 block md:hidden mx-auto">
         <img src="./assets/Astana_IT_University.png" alt="" class="h-auto w-44 mb-10">
+        <img src="./assets/ctfkaf.png" alt="" class="h-auto w-48 mb-12 ml-10 mr-10 hidden md:block">
+        <img src="./assets/logo.png" alt="" class="h-auto w-48 mb-9 rounded-lg">
       </div>
     </section>
     </div>
