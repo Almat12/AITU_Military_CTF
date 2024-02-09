@@ -1,36 +1,68 @@
 <template>
   <div class="relative flex flex-col h-screen m-0">
- 
     <img src="./assets/bg.gif" alt="Background" class="absolute z-0 w-full h-full object-cover" />
     <div class="flex flex-1 items-end justify-center mt-16 pb-12 z-10">
-      <!-- Countdown timer -->
       <div class="absolute bottom-0 mb-12 w-full flex flex-col items-center justify-center z-20">
-      <div class="flex flex-wrap justify-center space-x-4 mb-4">
-        <div class="flex flex-col items-center justify-center m-2">
-          <p class="text-5xl text-white font-semibold">{{ days >= 0 ? days : 0 }}</p>
-          <h1 class="text-xl md:text-3xl text-white">Days</h1>
+        <template v-if="timeLeft">
+          <div class="flex flex-wrap justify-center space-x-4 mb-4">
+            <div class="flex flex-col items-center justify-center m-2">
+              <p class="text-5xl text-white font-semibold">{{ days >= 0 ? days : 0 }}</p>
+              <span class="text-xl md:text-3xl text-white">Days</span>
+            </div>
+            <div class="flex flex-col items-center justify-center m-2">
+              <p class="text-5xl text-white font-semibold">{{ hours >= 0 ? hours % 24 : 0 }}</p>
+              <span class="text-xl md:text-3xl text-white">Hours</span>
+            </div>
+            <div class="flex flex-col items-center justify-center m-2">
+              <p class="text-5xl text-white font-semibold">{{ minutes >= 0 ? minutes % 60 : 0 }}</p>
+              <span class="text-xl md:text-3xl text-white">Minutes</span>
+            </div>
+            <div class="flex flex-col items-center justify-center m-2">
+              <p class="text-5xl text-white font-semibold">{{ seconds >= 0 ? seconds % 60 : 0 }}</p>
+              <span class="text-xl md:text-3xl text-white">Seconds</span>
+            </div>
+          </div>
+          <div>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 mr-4 rounded">
+            <a href="https://forms.office.com/r/hcX0PDgALY" target="_blank">
+              Регистрация команды
+            </a>
+          </button>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 rounded">
+            <a href="https://forms.office.com/r/hcX0PDgALY" target="_blank">
+              Регистрация как гость
+            </a>
+          </button>
         </div>
-        <div class="flex flex-col items-center justify-center m-2">
-          <p class="text-5xl text-white font-semibold">{{ hours >= 0 ? hours % 24 : 0 }}</p>
-          <h1 class="text-xl md:text-3xl text-white">Hours</h1>
-        </div>
-        <div class="flex flex-col items-center justify-center m-2">
-          <p class="text-5xl text-white font-semibold">{{ minutes >= 0 ? minutes % 60 : 0 }}</p>
-          <h1 class="text-xl md:text-3xl text-white">Minutes</h1>
-        </div>
-        <div class="flex flex-col items-center justify-center m-2">
-          <p class="text-5xl text-white font-semibold">{{ seconds >= 0 ? seconds % 60 : 0 }}</p>
-          <h1 class="text-xl md:text-3xl text-white">Seconds</h1>
+        </template >
+        <template v-else class="flex flex-wrap justify-end space-x-4">
+        <div class="flex flex-wrap justify-center space-x-4 mb-4">
+            <div class="flex flex-col items-center justify-center m-2">
+              <p class="text-5xl text-white font-semibold">{{ days >= 0 ? days : 0 }}</p>
+              <span class="text-xl md:text-3xl text-white">Days</span>
+            </div>
+            <div class="flex flex-col items-center justify-center m-2">
+              <p class="text-5xl text-white font-semibold">{{ hours >= 0 ? hours % 24 : 0 }}</p>
+              <span class="text-xl md:text-3xl text-white">Hours</span>
+            </div>
+            <div class="flex flex-col items-center justify-center m-2">
+              <p class="text-5xl text-white font-semibold">{{ minutes >= 0 ? minutes % 60 : 0 }}</p>
+              <span class="text-xl md:text-3xl text-white">Minutes</span>
+            </div>
+            <div class="flex flex-col items-center justify-center m-2">
+              <p class="text-5xl text-white font-semibold">{{ seconds >= 0 ? seconds % 60 : 0 }}</p>
+              <span class="text-xl md:text-3xl text-white">Seconds</span>
+            </div>
+          </div>
+          <div>
+            <p class="text-2xl md:text-2xl text-white font-bold">
+              Регистрация закрыта
+            </p> 
+          </div>
+        </template>
+        <div>
         </div>
       </div>
-      
-      <!-- Start Shopping Button -->
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 rounded" >
-        <a href="https://forms.office.com/r/hcX0PDgALY" target="_blank">
-        Регистрация
-      </a>
-      </button>
-    </div>
     </div>
   </div>
 </template>
@@ -48,7 +80,7 @@
       const hours = ref(0);
       const minutes = ref(0);
       const seconds = ref(0);
-      const LaunchDate = new Date('February, 22 2024, 23:59'); // Указывайте месяц перед днем для избежания путаницы
+      const LaunchDate = new Date('February, 22 2024, 23:59:59'); // Указывайте месяц перед днем для избежания путаницы
       setInterval(() => {
         const currDate = new Date();
         const launchTime = LaunchDate - currDate;
