@@ -7,10 +7,10 @@
   <!-- Workshop section -->
   <section class="mt-4 p-4 bg-white flex flex-col items-center lg:flex-row lg:justify-around lg:space-x-10">
   <!-- Qualifying Round Section -->
-  <div class="flex flex-col items-center lg:items-start">
+  <div class="flex flex-col items-center lg:items-start mt-4 lg:mt-0">
     <img src="./assets/checkin.png" alt="" class="h-auto w-60 rounded-lg">
-    <h2 class="text-lg font-bold mt-2 ml-4">Сбор участников</h2>
-    <p>24 Февраля 2024, 10:00 – 10:45</p>
+    <h2 class="text-lg font-bold mt-2">Сбор участников (Check In)</h2>
+    <p class="mb-3">24 Февраля 2024, 10:00 – 10:45</p>
 </div>
   <!-- Capture The Flag Challenge section -->
   <div class="flex flex-col items-center lg:items-start mt-4  lg:mt-0">
@@ -21,9 +21,9 @@
   <!-- Webinar and Award Presentation section -->
   
      <div class="flex flex-col items-center lg:items-start mt-4  lg:mt-0">
-    <img src="./assets/awards.png" alt="Основной этап CTF" class="h-auto w-60 rounded-lg">
-    <h2 class="text-lg font-bold ">Церемония награждения</h2>
-   <p class="ml-7">24 Февраля 2024, 17:00</p>
+    <img src="./assets/awards.png" alt="Основной этап CTF" class="h-auto w-52  rounded-lg">
+    <h2 class="text-lg font-bold mt-2">Церемония награждения</h2>
+   <p class="ml-7 mb-4">24 Февраля 2024, 17:00</p>
   </div>
   </section>
     <header id="key-events" class="text-black p-4">
@@ -112,7 +112,7 @@
       faqItems: [
         {
           question: 'Сколько команд примет участие в CTF?',
-          answer: 'В зависимости от количества участников, предварительно на CTF примут участие 15 команд.',
+          answer: 'В зависимости от количества участников, предварительно на CTF примут участие 10 команд.',
           open: false
         },
         // Добавьте дополнительные вопросы и ответы здесь
@@ -129,7 +129,7 @@
         },
         {
           question: 'Когда и где пройдет оффлайн CTF?',
-          answer: 'CTF состоится 24 февраля в Astana IT University в OpenSpace в оффлайн формате.',
+          answer: 'CTF состоится 17 февраля в Astana IT University в формате оффлайн. Место сообщим позже.',
           open: false
         },
         {
