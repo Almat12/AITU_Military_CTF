@@ -129,7 +129,7 @@
         },
         {
           question: 'Когда и где пройдет оффлайн CTF?',
-          answer: 'CTF состоится 24 февраля в Astana IT University в формате оффлайн. Место сообщим позже.',
+          answer: 'CTF состоится 24 февраля в Astana IT University в OpenSpace в оффлайн формате.',
           open: false
         },
         {
