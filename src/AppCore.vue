@@ -7,9 +7,9 @@
   <!-- Workshop section -->
   <section class="mt-4 p-4 bg-white flex flex-col items-center lg:flex-row lg:justify-around lg:space-x-10">
   <!-- Qualifying Round Section -->
-  <div class="flex flex-col items-center lg:items-start mt-4 lg:mt-0">
+  <div class="flex flex-col items-center lg:items-start">
     <img src="./assets/checkin.png" alt="" class="h-auto w-60 rounded-lg">
-    <h2 class="text-lg font-bold mt-2 ml-4">Check In команд</h2>
+    <h2 class="text-lg font-bold mt-2 ml-4">Сбор участников</h2>
     <p class="ml-3">24 Февраля 2024, 10:00 – 10:45</p>
 </div>
   <!-- Capture The Flag Challenge section -->
