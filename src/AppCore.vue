@@ -67,11 +67,12 @@
     </div>
   </div>
 </section>
-  <header id="key-events" class="text-black p-4">
+
+<header id="speak" class="text-black p-4">
   <h1 class="text-4xl font-bold text-center">Cпикеры</h1>
 </header>
       <!-- Speakers -->
-      <section class="mt-4 p-4 bg-white">
+      <section class="mt-4 p-4 bg-white" >
     <div class="flex flex-wrap justify-center items-center mt-8 md:justify-center">
       <div v-for="person in people" :key="person.id" class="h-auto w-48 mb-12 ml-16 mr-16">
         <!-- Image with Tailwind CSS classes -->
@@ -84,8 +85,10 @@
       </div>
     </div>
   </section>
+
+
       <!-- Organization -->
-      <header id="key-events" class="text-black p-4">
+      <header id="org" class="text-black p-4">
       <h1 class="text-4xl font-bold justify-center items-center flex">Организаторы</h1>
     </header>
     <section class="mt-4 p-4 bg-white">
@@ -117,7 +120,7 @@
 </template>
 
 <script>
-   import { ref } from 'vue';
+  import { ref } from 'vue';
   export default {
     name: 'PeopleList',
   data() {
@@ -208,6 +211,7 @@ methods: {
 
 </script>
 <style>
+
 /* Ensure that the answer divs do not interfere with each other */
 .faq-answer {
   transition: all 0.3s ease;
