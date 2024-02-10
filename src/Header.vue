@@ -67,28 +67,33 @@
   </div>
 </template>
 
-  
-  
-  <script>
-  import { ref } from 'vue';
-  
-  export default {
-    setup() {
-      const days = ref(0);
-      const hours = ref(0);
-      const minutes = ref(0);
-      const seconds = ref(0);
-      const LaunchDate = new Date('February, 22 2024, 23:59:59'); // Указывайте месяц перед днем для избежания путаницы
-      setInterval(() => {
-        const currDate = new Date();
-        const launchTime = LaunchDate - currDate;
-        seconds.value = Math.max(parseInt(launchTime / 1000), 0);
-        minutes.value = Math.max(parseInt(seconds.value / 60), 0);
-        hours.value = Math.max(parseInt(minutes.value / 60), 0);
-        days.value = Math.max(parseInt(hours.value / 24), 0);
-      }, 1000);
-      return { days, hours, minutes, seconds };
-    }
-  }
-  </script>
-  
+<script>
+import { ref } from 'vue';
+
+export default {
+  setup() {
+    const days = ref(0);
+    const hours = ref(0);
+    const minutes = ref(0);
+    const seconds = ref(0);
+    const timeLeft = ref(true);
+    const LaunchDate = new Date('February 22, 2024 19:35:00');
+
+    setInterval(() => {
+      const currDate = new Date();
+      const launchTime = LaunchDate - currDate;
+      if (launchTime < 0) {
+        timeLeft.value = false;
+      } else {
+        timeLeft.value = true;
+        seconds.value = Math.floor((launchTime / 1000) % 60);
+        minutes.value = Math.floor((launchTime / 1000 / 60) % 60);
+        hours.value = Math.floor((launchTime / (1000 * 60 * 60)) % 24);
+        days.value = Math.floor(launchTime / (1000 * 60 * 60 * 24));
+      }
+    }, 1000);
+
+    return { days, hours, minutes, seconds, timeLeft };
+  },
+};
+</script>
