@@ -29,7 +29,7 @@
             </a>
           </button>
           <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 rounded">
-            <a href="https://forms.office.com/r/qfxx1kYfhW" target="_blank">
+            <a href="https://forms.office.com/r/hcX0PDgALY" target="_blank">
               Регистрация как гость
             </a>
           </button>
@@ -66,8 +66,6 @@
     </div>
   </div>
 </template>
-
-
 
   
   
