@@ -16,10 +16,6 @@
     :class="[open ? 'left-0' : 'left-[-100%]']">
       <li class="md:mx-4 md:my-0 my-6 ml-4" v-for="link in Links">
         <a :href="link.link" class="text-xl hover:text-green-500">{{link.name}}</a>
-        
-      </li>
-      <li class="md:mx-4 md:my-0 my-6 ml-4" >
-        <a href="https://forms.office.com/r/hcX0PDgALY" class="text-xl hover:text-green-500" target="_blank">Регистрация</a>
       </li>
     </ul>
   </div>
@@ -38,8 +34,9 @@ export default {
     
     let Links = [
       { name: "Ключевые события", link: "#key-events" },
+      { name: "Cпикеры", link: "#speak" },
+      { name: "Организаторы", link: "#org" },
       { name: "FAQ", link: "#FAQ" },
-
     ];
 
     function MenuOpen() {
@@ -47,9 +44,26 @@ export default {
       let Links = [
       { name: "Ключевые события", link: "#key-events" },
       { name: "FAQ", link: "#FAQ" },
+      { name: "Cпикеры", link: "#speak" },
+      { name: "Организаторы", link: "#org" },
 
     ]
     }
+    document.addEventListener('DOMContentLoaded', function() {
+  const image = document.getElementById('imageElement');
+  const svg = document.getElementById('svgElement');
+  const toggleButton = document.getElementById('toggleButton');
+
+  toggleButton.addEventListener('click', function() {
+    if (image.style.display !== 'none') {
+      image.style.display = 'none';
+      svg.style.display = 'block';
+    } else {
+      image.style.display = 'block';
+      svg.style.display = 'none';
+    }
+  });
+});
 
     return { Links, open, MenuOpen };
   },
