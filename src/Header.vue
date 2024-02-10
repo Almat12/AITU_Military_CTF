@@ -77,7 +77,7 @@ export default {
     const minutes = ref(0);
     const seconds = ref(0);
     const timeLeft = ref(true);
-    const LaunchDate = new Date('February 22, 2024 19:35:00');
+    const LaunchDate = new Date('February 22, 2024 22:59:59');
 
     setInterval(() => {
       const currDate = new Date();
