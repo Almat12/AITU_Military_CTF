@@ -67,11 +67,23 @@
     </div>
   </div>
 </section>
-
-
-
-
-
+  <header id="key-events" class="text-black p-4">
+  <h1 class="text-4xl font-bold text-center">Cпикеры</h1>
+</header>
+      <!-- Speakers -->
+      <section class="mt-4 p-4 bg-white">
+    <div class="flex flex-wrap justify-center items-center mt-8 md:justify-center">
+      <div v-for="person in people" :key="person.id" class="h-auto w-48 mb-12 ml-16 mr-16">
+        <!-- Image with Tailwind CSS classes -->
+        <img :src="person.imageSrc" :alt="person.name" class="rounded-xl blur-sm md:block">
+        <!-- Person's details -->
+        <div class="text-center">
+          <p class="text-lg font-bold">{{ person.name }}</p>
+          <p class="text-sm">{{ person.position }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
       <!-- Organization -->
       <header id="key-events" class="text-black p-4">
       <h1 class="text-4xl font-bold justify-center items-center flex">Организаторы</h1>
@@ -105,10 +117,31 @@
 </template>
 
 <script>
-  import { ref } from 'vue';
+   import { ref } from 'vue';
   export default {
+    name: 'PeopleList',
   data() {
     return {
+      people: [
+        {
+          id: 1,
+          name: '???',
+          position: 'XXX',
+          imageSrc: '/unknown.jpeg'
+        },
+        {
+          id: 2,
+          name: '???',
+          position: 'XXX',
+          imageSrc: '/unknown.jpeg'
+        },
+        {
+          id: 3,
+          name: '???',
+          position: 'XXX',
+          imageSrc: '/unknown.jpeg'
+        }
+      ],
       faqItems: [
         {
           question: 'Сколько команд примет участие в CTF?',
