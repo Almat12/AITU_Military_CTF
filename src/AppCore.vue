@@ -126,10 +126,11 @@
     name: 'PeopleList',
   data() {
     return {
-        people: [
+          people: [
         {
           id: 1,
           name: 'Оразбеков Шокан Сансызбаевич',
+          theme: 'Тема выступления ',
           position: 'O деятельности АФМ РК и возможностях трудоустройства/прохождения стажировок',
           imageSrc: '/speaker_1.jpg'
         },
