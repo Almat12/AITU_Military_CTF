@@ -72,7 +72,7 @@
   <h1 class="text-4xl font-bold text-center">Cпикеры</h1>
 </header>
       <!-- Speakers -->
-     <section class="mt-4 p-4 bg-white">
+      <section class="mt-4 p-4 bg-white">
   <div class="flex flex-wrap justify-center items-center mt-8 md:justify-center">
     <div v-for="person in people" :key="person.id" class="h-auto w-48 mb-12 ml-16 mr-16"
          :class="{'blur': person.id === 2 || person.id === 3}">
@@ -81,12 +81,12 @@
       <!-- Person's details -->
       <div class="text-center">
         <p class="text-lg font-bold">{{ person.name }}</p>
+        <p class="text-lg font-bold">{{ person.theme }}</p>
         <p class="text-sm text-wrap">{{ person.position }}</p>
       </div>
     </div>
   </div>
 </section>
-
 
       <!-- Organization -->
       <header id="org" class="text-black p-4">
