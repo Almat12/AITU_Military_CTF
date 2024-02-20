@@ -75,7 +75,7 @@
       <section class="mt-4 p-4 bg-white">
   <div class="flex flex-wrap justify-center items-center mt-8 md:justify-center">
     <div v-for="person in people" :key="person.id" class="h-auto w-48 mb-12 ml-16 mr-16"
-         :class="{'blur': person.id === 2 || person.id === 3}">
+         :class="{'blur': person.id === 3}">
       <!-- Image with Tailwind CSS classes and conditional blur -->
       <img :src="person.imageSrc" :alt="person.name" class="rounded-xl md:block">
       <!-- Person's details -->
