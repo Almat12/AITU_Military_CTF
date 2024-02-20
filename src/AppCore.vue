@@ -77,10 +77,10 @@
     <div v-for="person in people" :key="person.id" class="h-auto w-48 mb-12 ml-16 mr-16"
          :class="{'blur': person.id === 3}">
       <!-- Image with Tailwind CSS classes and conditional blur -->
-      <img :src="person.imageSrc" :alt="person.name" class="rounded-xl md:block">
+      <img :src="person.imageSrc" :alt="person.name" class="rounded-xl mt-3 md:block">
       <!-- Person's details -->
       <div class="text-center">
-        <p class="text-lg underline mt-3">{{ person.theme }}</p>
+        <p class="text-lg underline">{{ person.theme }}</p>
         <p class="text-sm text-wrap">{{ person.position }}</p>
       </div>
     </div>
