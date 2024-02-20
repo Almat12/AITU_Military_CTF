@@ -80,7 +80,7 @@
       <img :src="person.imageSrc" :alt="person.name" class="rounded-xl md:block">
       <!-- Person's details -->
       <div class="text-center">
-        <p class="text-lg underline">{{ person.theme }}</p>
+        <p class="text-lg underline mt-3">{{ person.theme }}</p>
         <p class="text-sm text-wrap">{{ person.position }}</p>
       </div>
     </div>
@@ -137,7 +137,7 @@
           id: 2,
           name: 'Оразбеков Шокан Сансызбаевич',
           theme: 'Тема выступления',
-          position: 'Деятельность АФМ РК, возможности трудоустройства и стажировок',
+          position: 'О деятельности АФМ РК и возможностях трудоустройства/прохождения стажировок',
           imageSrc: '/second.jpg'
         },
         {
