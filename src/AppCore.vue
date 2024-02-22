@@ -80,7 +80,7 @@
       <!-- Person's details -->
       <div class="text-center">
         <p class="text-lg underline">{{ person.theme }}</p>
-        <p class="text-sm text-wrap ":class="{'mt-4': person.id === 2}">{{ person.position }}</p>
+        <p class="text-sm text-wrap ":class="{'mt-8': person.id === 2}">{{ person.position }}</p>
       </div>
     </div>
   </div>
