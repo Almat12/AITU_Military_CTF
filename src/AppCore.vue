@@ -79,8 +79,8 @@
       <img :src="person.imageSrc" :alt="person.name" class="rounded-xl md:block">
       <!-- Person's details -->
       <div class="text-center">
-        <p class="text-lg underline">{{ person.theme }}</p>
-        <p class="text-sm text-wrap ":class="{'mt-8': person.id === 2}">{{ person.position }}</p>
+        <p class="text-lg underline ":class="{'mt-4': person.id === 2}"">{{ person.theme }}</p>
+        <p class="text-sm text-wrap>{{ person.position }}</p>
       </div>
     </div>
   </div>
