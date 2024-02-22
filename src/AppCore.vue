@@ -79,7 +79,7 @@
       <img :src="person.imageSrc" :alt="person.name" class="rounded-xl md:block">
       <!-- Person's details -->
       <div class="text-center">
-        <p class="text-lg underline "</p>
+        <p class="text-lg underline">{{ person.theme }}</p>
         <p class="text-sm text-wrap">{{ person.position }}</p>
       </div>
     </div>
